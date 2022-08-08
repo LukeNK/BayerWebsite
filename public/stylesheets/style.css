@@ -1,0 +1,113 @@
+:root {
+  --color-fg: black;
+  --color-section: rgb(156, 151, 141);
+  --color-highlight: #CB7943;
+  --color-bg: #fffcf2ff;
+  --color-theme: #4B7B8F;
+  --color-warn: #ff0035;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+}
+
+nav {
+  position: absolute;
+  top: 0; right: 0; left: 0;
+  height: 2rem;
+  background-color: var(--color-section);
+}
+nav > * {
+  margin-top: 0;
+}
+nav a {
+  float: left;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  width: 100%;
+  font-size: large;
+  color: var(--color-fg);
+}
+nav a:hover {
+  background-color: var(--color-theme);
+}
+
+#navButton {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 2;
+  height: 2rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 0 5vw;
+}
+
+a {
+  color: var(--color-theme);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-theme);
+}
+
+input, textarea {
+  outline: none;
+  border: 1px solid var(--color-highlight);
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+}
+
+button {
+  border: 0;
+  color: var(--color-fg);
+  background-color: var(--color-section);
+}
+button:hover {
+  background-color: var(--color-theme);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+code {
+  color: var(--color-highlight);
+}
+
+footer {
+  background-color: var(--color-section);
+}
+
+/* Classes */
+.warning {
+  color: var(--color-warn);
+}
+
+/* This is for a list of links and its inner content of a page */
+.navBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.navBlock > div {
+  width: 23%;
+}
+.navBlock > div > a {
+  font-size: larger;
+}
+.navBlock > div > p {
+  margin: 0;
+}

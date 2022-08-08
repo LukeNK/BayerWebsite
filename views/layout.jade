@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  //- Careful when changing the "block content": you could facked up the entire website
+  body
+    nav
+      h1= title
+    block content
+  script(src="/javascripts/script.js") 

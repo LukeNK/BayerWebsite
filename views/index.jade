@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  style.
+    #picOverlay {
+      background-image: url("/images/wallpaper.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 50vh;
+      
+      /* Flexing flex skill */
+      display: flex;
+      justify-content: center;
+      align-content: center
+    }
+  div(id="picOverlay")
+    h1(style="margin-top: 0; color: var(--color-highlight);")= title
+
+  main
+    p Welcome to #{title}
+    //- Navigation block: list of links for people to go to
+    div(class="navBlock")
+      div
+        a(href="") Government
+        p Information on Parliament, Executive offices, testify in the Parliament
+      div
+        a(href="") Migration and Travel
+        p Citizenship, Temporary Permit, sponsorship, guardian, possible immigration restrictions
+      div
+        a(href="") Our People, Culture, and History
+        p Language, Fidelissma, our history
+      div
+        a(href="") Elections
+        p Election Commision, future election, eligible voter, becoming a candidate
+      div
+        a(href="") Laws and Justice
+        p Look up laws, Constitution, rights and freedom, Court of Justice, court proceadures
+      div
+        a(href="") Helping our State
+        p Volunteering, contributing to open-source projects, discuss with government officials
+      div
+        a(href="") Working for our Government
+        p Executive offices, Fidelissma server operator, affiliated companies
+      div
+        a(href="") Our Progress
+        p Current projects, Parliament draft acts
