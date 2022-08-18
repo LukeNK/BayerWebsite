@@ -3,9 +3,13 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
   //- Careful when changing the "block content": you could facked up the entire website
   body
     nav
+      a(href="/") 
+        img(src="/images/flag.png", alt="Flag")
       h1= title
     block content
   script(src="/javascripts/script.js") 

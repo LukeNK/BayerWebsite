@@ -15,7 +15,9 @@
 }
 body {
   padding: 0;
+  padding-top: var(--navBar-height);
   margin: 0;
+  overflow-x: hidden;
   font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
   color: var(--color-fg);
   background-color: var(--color-bg);
@@ -29,17 +31,10 @@ nav {
 }
 nav > * {
   margin-top: 0;
-}
-nav a {
   float: left;
-  padding: 0.25rem 1rem;
-  text-decoration: none;
-  width: 100%;
-  font-size: large;
-  color: var(--color-fg);
 }
-nav a:hover {
-  background-color: var(--color-theme);
+nav > a {
+  height: 100%;
 }
 
 #navButton {
@@ -99,15 +94,27 @@ details > summary {
   padding: 2px 6px;
   width: 100%;
   background-color: var(--color-section2);
-  border: none;
+  font-size: large;
+  font-weight: bold;
+  border-left: 5px solid var(--color-theme);
   cursor: pointer;
-  list-style: none;
 }
 details > p {
-  background-color: var(--color-section);
   padding: 2px 6px;
   margin: 0;
+  border-left: 5px solid var(--color-theme);
+  background-color: var(--color-section);
 }
+
+blockquote {
+  padding: 1rem 1rem;
+  border-left: 5px solid var(--color-theme);
+  background: var(--color-section);
+}
+/* blockquote::before, blockquote::after {
+  font-size: xx-large;
+  content: '"';
+} */
 
 /* Classes */
 .warning {
