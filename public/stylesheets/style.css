@@ -107,6 +107,7 @@ details > p {
 }
 
 blockquote {
+  margin: 0;
   padding: 1rem 1rem;
   border-left: 5px solid var(--color-theme);
   background: var(--color-section);
