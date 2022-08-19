@@ -15,6 +15,13 @@ router.get('/government/:name', (req, res, next) => {
   res.render(`government/${req.params.name}`, {title: req.params.name})
 });
 
+router.get('/people', (req, res, next) => {
+  res.render(`people/index`, {title: 'Bayer Free State people'})
+});
+router.get('/people/:name', (req, res, next) => {
+  res.render(`people/${req.params.name}`, {title: req.params.name})
+});
+
 router.get('/elections', (req, res, next) => {
   res.render(`elections/index`, {title: 'Bayer Free State Elections'})
 });

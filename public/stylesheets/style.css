@@ -99,11 +99,18 @@ details > summary {
   border-left: 5px solid var(--color-theme);
   cursor: pointer;
 }
-details > p {
+details > summary:hover {
+  text-decoration: underline;
+}
+details > p, details > ul {
   padding: 2px 6px;
   margin: 0;
   border-left: 5px solid var(--color-theme);
   background-color: var(--color-section);
+}
+details > ul > li {
+  /* Probably need to change to default */
+  margin-left: 1rem; 
 }
 
 blockquote {
